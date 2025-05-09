@@ -150,7 +150,7 @@
   @media (min-width: 768px) {
     .product-container {
       flex-direction: row;
-      align-items: stretch; /* make items the same height */
+      align-items: stretch; 
       gap: 30px;
     }
   
@@ -158,7 +158,7 @@
       max-width: 50%;
       width: 100%;
       object-fit: cover;
-      height: 100%; /* allow full height if needed */
+      height: 100%; 
       border-radius: 12px;
     }
   
