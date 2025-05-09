@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Helio Pet Product</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
+    <main class="product-section">
+        <div class="product-container">
+          <img src="product.png" alt="Helio Pet Device" class="product-image" />
+          <div class="product-info">
+            
+            <p class="review">
+              <span>⭐⭐⭐⭐⭐ 4.9</span> (1,021 reviews)
+            </p>
+            <h1>Helio Pet Device</h1>
+            <div class="testimonial">
+                <img src="pic.jpg" alt="" class="quote-pic">
+                <p>“We are BOTH so THANKFUL! I purchased this for my 12 year old Lab mix as he's got mobility issues with the back legs. It's been 3 weeks and already a difference!”</p>
+              </div>
+            <ul class="features">
+              <li>✓ Reduce aches & pains with 5-minute sessions.</li>
+              <li>✓ Cold Laser Therapy helps with Pain, Inflammation & more.</li>
+              <li>✓ Professional Grade LLLT with 5 Laser Diodes.</li>
+            </ul>
+            <div class="price-box">
+              <span class="old-price">$369.00</span>
+              <span class="current-price" id="price">$249.00</span>
+            </div>
+            <div class="qty-box">
+              <button id="decrease">-</button>
+              <span id="qty">1</span>
+              <button id="increase">+</button>
+            </div>
+            <button id="addToCart" class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </main>
+    
+      <!-- Cart Drawer -->
+      <aside id="cartDrawer" class="drawer">
+        <div class="drawer-header">
+          <h2>Your Cart</h2>
+          <button onclick="closeCart()" class="close-btn">×</button>
+        </div>
+        <div class="drawer-body" id="cartItems"></div>
+        <div class="drawer-footer">
+          <p>Estimated total: <span id="totalPrice">$0.00</span></p>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </aside>
+    
+      <script src="script.js"></script>
+
 </body>
 </html>
